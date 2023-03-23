@@ -1,14 +1,14 @@
---Создать таблицу employees
+--Создать таблицу employee
 --- id. serial,  primary key,
 --- employees_name. Varchar(50), not null
 
-create table employees(
+create table employee(
   id serial primary key,
   employees_name varchar (50) unique not null);
 
  -- Наполнить таблицу employee 70 строками.
  
-insert into employees(employees_name)
+insert into employee(employees_name)
 values ('Иванов'),
 ('Смирнов'),
 ('Кузнецов'),
@@ -78,7 +78,7 @@ values ('Иванов'),
 ('Власов'),
 ('Мельников'),
 ('Денисов');
-select * from employees;
+select * from employee;
 
 --Создать таблицу salary
 --- id. Serial  primary key,
